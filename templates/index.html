@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Mask Detection</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+    
+    <h1 class="text-3xl font-bold mb-6">Hospital Gate Entry System</h1>
+
+    <div class="bg-white p-4 rounded-lg shadow-lg">
+        <video id="video" width="400" height="300" autoplay class="rounded-lg"></video>
+        <br>
+        <button id="capture" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">Capture & Check Mask</button>
+    </div>
+
+    <div id="result" class="mt-6 text-xl font-semibold"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
